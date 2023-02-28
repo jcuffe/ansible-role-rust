@@ -18,3 +18,5 @@
         force: 'yes'
     - name: install rust/cargo
       shell: /tmp/sh.rustup.rs -y
+    - name: add tools to path
+      shell: fish -c "set -U fish_user_paths $HOME/.cargo/bin $fish_user_paths"
